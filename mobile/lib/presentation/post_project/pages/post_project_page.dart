@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:mobile/data/models/projectz.dart';
-import 'package:mobile/data/models/user.dart';
 import 'package:mobile/presentation/post_project/cubit/post_project_cubit.dart';
 import 'package:mobile/presentation/shared/my_text_field.dart';
 import 'package:mobile/presentation/shared/profile_picture.dart';
@@ -77,7 +76,7 @@ class _PostProjectPageState extends State<PostProjectPage> {
                 showDialog(
                     context: context,
                     builder: (context) {
-                      return Center(
+                      return const Center(
                         child: CircularProgressIndicator(),
                       );
                     });
@@ -85,7 +84,7 @@ class _PostProjectPageState extends State<PostProjectPage> {
                 showDialog(
                     context: context,
                     builder: (context) {
-                      return Text('ghalta');
+                      return const Text('ghalta');
                     });
               }
             },
